@@ -17,12 +17,7 @@ spec:
   - kustomizeConfig:
       repoRef:
         name: manifests
-        path: stacks/kubernetes/application/istio-1-3-1-stack
-    name: istio-stack
-  - kustomizeConfig:
-      repoRef:
-        name: manifests
-        path: stacks/kubernetes/application/cluster-local-gateway-1-3-1
+        path: stacks/kubernetes/application/cluster-local-gateway
     name: cluster-local-gateway
   - kustomizeConfig:
       repoRef:
@@ -86,5 +81,5 @@ spec:
     name: kfserving
   repos:
   - name: manifests
-    uri: https://github.com/kubeflow/manifests/archive/v1.2.0.tar.gz
+    uri: https://github.com/neofarm473/kubeflow/archive/master.tar.gz
   version: v1.2-branch
