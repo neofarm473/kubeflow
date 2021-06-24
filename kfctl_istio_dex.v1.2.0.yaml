@@ -7,11 +7,6 @@ spec:
   - kustomizeConfig:
       repoRef:
         name: manifests
-        path: namespaces/base
-    name: namespaces
-  - kustomizeConfig:
-      repoRef:
-        name: manifests
         path: application/v3
     name: application
   - kustomizeConfig:
